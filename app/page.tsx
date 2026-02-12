@@ -1,3 +1,5 @@
+
+'use client' 
 import { Github, Linkedin, FileText, Mail, ArrowUpRight } from "lucide-react";
 import { FloatingParticles } from "@/components/floating-particles";
 import { CursorGlow } from "@/components/cursor-glow";
@@ -5,8 +7,12 @@ import { GradientBlobs } from "@/components/gradient-blobs";
 import { SocialLink } from "@/components/social-link";
 import { StatusPill } from "@/components/status-pill";
 import { TechMarquee } from "@/components/tech-marquee";
+import { usePathname } from "next/navigation";
 
 export default function Page() {
+  const pathname = usePathname() 
+  console.log('check the path name', pathname)
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Background effects */}
@@ -65,7 +71,8 @@ export default function Page() {
               description="Let's connect professionally"
             />
             <SocialLink
-              href="/Preet_Shah_Resume.pdf"
+              // href={basePath ? `${basePath}/Preet_Shah_Resume.pdf` : "/Preet_Shah_Resume.pdf"} 
+              href=""
               icon={<FileText className="h-5 w-5" />}
               label="Resume"
               description="Download my latest CV"
