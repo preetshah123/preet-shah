@@ -99,7 +99,6 @@ export default function Page() {
                     to developing back-end APIs and microservice for user data querying. 
                   </p>
                 </div>
-                <ArrowUpRight className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground/50 transition-all duration-300 group-hover:text-primary" />
               </div>
               <div className="mt-3 flex gap-2">
                 <span className="rounded-md bg-primary/10 px-2 py-0.5 text-[10px] font-medium text-primary">
